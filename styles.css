@@ -1,0 +1,147 @@
+/* CSS Document */
+body{
+	background: #c2dfe3;
+	overflow-x: hidden;
+	margin: 0;
+}
+
+.container{
+	font-size: 5vh;
+}
+header{
+	background-color: #253237;
+	height: 20vh;
+	width: 100vw;
+	background-size: 100%;
+	margin-bottom: 3vh;
+	box-shadow: 1px 1px 5vh black;
+}
+
+.page{
+	background-color: #B0D5DA;
+	width: 80vw;
+	align-self: center;
+	align-content: center;
+	margin: auto;
+	box-shadow: 1px 1px 3vh black;
+	padding-bottom: 12px;
+	font-family: 'Hind', sans-serif;
+	
+}
+
+.page::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+.logo{
+	float: left;
+	padding: auto;
+	background-color: #253237;
+	padding-left: 25px
+}
+
+page .column{
+	display: block;
+	clear: both;
+}
+
+
+nav {
+	float: right;
+}
+
+nav ul {
+	margin: 0;
+	padding-top: 5vh;
+	list-style: none;
+	padding-right: 3vw;
+}
+
+nav li{
+	display: inline-block;
+	margin-left: 3vw;
+	padding-top: 1vh;
+	position: relative;
+	
+}
+
+
+nav a {
+	color: #C2dfe3;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 5vh 3vw;
+	border-radius: 4%;
+}
+
+a:hover{
+	background: #3E535C;
+	transition: .5s;
+	
+}
+
+
+
+
+/* Slideshow container */
+.slide_show_cont {
+ 	max-width: 80vw;
+	position: relative;
+ 	margin: auto;
+	align: center;
+}
+
+/* Caption text */
+.caption {
+  color: #f2f2f2;
+  font-size: 8vh;
+  padding: 8px 12px 10vh;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 5px 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
